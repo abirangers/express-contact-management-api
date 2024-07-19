@@ -48,7 +48,7 @@ const remove = async (req, res, next) => {
     try {
         const user = req.user;
         const {contactId, addressId} = req.params;
-        await addressService.remove(user, contactId, addressId);
+        addressService.remove(user, contactId, addressId);
         res.status(200).json({
             data: "OK"
         });

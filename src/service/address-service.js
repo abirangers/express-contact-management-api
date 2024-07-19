@@ -1,7 +1,6 @@
 import { prismaClient } from "../application/database"
-import { logger } from "../application/logging";
 import { ResponseError } from "../error/response-error";
-import { createAddressValidation, getAddressValidation, removeAddressValidation, updateAddressValidation } from "../validation/address-validation";
+import { createAddressValidation, getAddressValidation, updateAddressValidation } from "../validation/address-validation";
 import { getContactValidation } from "../validation/contact-validation";
 import { validate } from "../validation/validation";
 

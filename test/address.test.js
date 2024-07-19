@@ -1,8 +1,6 @@
 import supertest from "supertest";
 import { createTestAddress, createTestContact, createTestUser, getTestAddress, getTestContact, removeAllTestAddresses, removeAllTestContact, removeTestUser } from "./test-util";
 import { web } from "../src/application/web";
-import { logger } from "../src/application/logging";
-
 
 describe('POST /api/contacts/:contactId/addresses', () => {
     beforeEach(async () => {
